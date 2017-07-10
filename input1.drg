@@ -1,0 +1,43 @@
+{
+	int i;
+	int times;
+	float term;
+	float sum;
+	
+	i = 1;
+	times = 1;
+	sum = 1.5;
+	
+	while (times <= 20)
+	{
+		term = 1 / (i * (i+1));
+		if (times < 5 || times >= 15)
+			sum = sum + term;
+		else
+		{
+			if (times > 5 && times <= 10)
+			{
+				if (times == 7)
+					term = term * 2;
+				if (! times == 9)
+					sum = sum - term;
+				if (times != 8)
+					sum = sum * 1.5 + times;
+			}
+			else
+				sum = sum + term * 2;
+		}
+		i = i + 1;
+		if (i < 5)
+			i = i + 2;
+	}
+	
+	i = 1;
+	do {
+		if (sum > 3)
+			sum = sum - 0.1;
+		else
+			sum = sum * 0.9;
+		i = i + 1;
+	} while(i < 10);
+}

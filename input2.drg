@@ -1,0 +1,22 @@
+{
+	int w; int x; int y; int z;	/* block B1 */
+	int i; int j;
+	i = 3; j = 4;
+	{
+		int i;					/* block B2 */
+		i = 5;
+		{
+			int j;				/* block B3 */
+			j = 2;
+			w = i+j;
+		}
+	}
+	x = i+j;
+	{
+		int j;					/* block B4 */
+		j = 6;
+		i = 7;
+		y = i+j;
+	}
+	z = i+j;
+}

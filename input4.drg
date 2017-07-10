@@ -1,0 +1,17 @@
+{
+	float price;
+	int sum;
+	
+	price = 3.54;
+	
+	if (price < 3)
+		sum = price * 5;
+	else
+	{
+		if (price < 5)
+			//nop
+		else
+			sum = price * 3;
+	}
+}
+

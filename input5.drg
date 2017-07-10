@@ -1,0 +1,14 @@
+{
+	float price;
+	int i; int sum;
+	
+	price = 3.54;
+	
+	i = 2;
+	while (i <= 100)
+	{
+		sum = sums + i * price;	//sums is not defined!
+		i = i + 2;
+	}
+}
+

@@ -1,0 +1,16 @@
+{
+	float price;
+	int i; int x; int sum; char ch;
+	
+	1216_price = 3.54;	//illegal id
+	
+	i = 2;
+	ch = 'B';
+	while (i <= 100)
+	{
+		int x;
+		sum = sum + i;
+		i = i + 2;
+	}
+}
+
