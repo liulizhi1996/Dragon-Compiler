@@ -1,8 +1,8 @@
 # Dragon Compiler
-This my final project of Compilers Principles in XMU. It's an Intermediate Representation Code Generator implemented by Flex and Yacc.
+This my final project of Compilers Principles in XMU. It's an [Intermediate Representation] Code Generator implemented by [Flex] and [Bison].
 
 ## Syntax Description
-We call the following language as the **Dragon** Language, as it's proposed in the appendix A of the Dragon Book. The syntax is:
+We call the following language as the **Dragon** Language, as it's proposed in the appendix A of the [Dragon Book]. The syntax is:
 
 ```
 program -> block
@@ -12,11 +12,11 @@ decl -> type id ;
 type -> basic
 stmts -> stmts stmt | stmt
 stmt -> id = expr ;
-		| if ( bool ) stmt
-		| if (bool) stmt else stmt
-		| while ( bool ) stmt
-		| do stmt while ( bool ) ;
-		| block
+	| if ( bool ) stmt
+	| if (bool) stmt else stmt
+	| while ( bool ) stmt
+	| do stmt while ( bool ) ;
+	| block
 bool -> bool || join | join
 join -> join && equality | equality
 equality -> equality == rel | equality != rel | rel
@@ -73,3 +73,8 @@ $ ./compiler.o
 ## Quick Installation
 
 I write a shell file called `run.sh` to finish all the steps above. You can type `./run.sh` in the terminal. Please check the names of source file and object file before your execution.
+
+[Dragon Book]: https://www.amazon.com/Compilers-Principles-Techniques-and-Tools-Aho-Alfred-V/dp/0321486811/ref=sr_1_2?s=books&ie=UTF8&qid=1499660919&sr=1-2&keywords=Compilers%3A+Principles%2C+Techniques+and+Tools
+[Intermediate representation]: https://en.wikipedia.org/wiki/Intermediate_representation
+[Flex]: https://en.wikipedia.org/wiki/Flex_(lexical_analyser_generator)
+[Bison]: https://en.wikipedia.org/wiki/GNU_bison
